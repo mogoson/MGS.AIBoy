@@ -1,0 +1,8 @@
+{
+	"apiKeyUrl":"https://dashscope.console.aliyun.com/apiKey",
+	"textApi":{
+		"url":"https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation",
+		"model":"qwen1.5-72b-chat",
+		"role":"user"
+	}
+}

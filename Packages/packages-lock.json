@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.mgs.qianwenhub": {
+      "version": "https://github.com/mogoson/MGS.QianWenHub.git?path=/Assets",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "a064e341a4cdab70af3fcb7638ab81258cb39269"
+    },
     "com.mgs.scriptdiemaker": {
       "version": "https://github.com/mogoson/MGS.ScriptDiemaker.git?path=/Assets",
       "depth": 0,
@@ -26,7 +33,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "d2fc43f649d47dd52fe4a8b866d378cadfd86a7a"
+      "hash": "e609efa21a9824f47f1e15f7aa3fefaa04d0c1e7"
     },
     "com.unity.collab-proxy": {
       "version": "2.3.1",
@@ -43,7 +50,7 @@
       "url": "https://packages.unity.cn"
     },
     "com.unity.ide.rider": {
-      "version": "3.0.28",
+      "version": "3.0.31",
       "depth": 0,
       "source": "registry",
       "dependencies": {

@@ -1,0 +1,19 @@
+{
+    "name": "MGS.App",
+    "rootNamespace": "",
+    "references": [
+        "MGS.UI.Widget",
+        "MGS.QianWen",
+        "MGS.QianWen.UI",
+        "MGS.QianWen.Cpnt"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
