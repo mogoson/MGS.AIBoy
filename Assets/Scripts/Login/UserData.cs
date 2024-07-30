@@ -18,12 +18,12 @@ namespace MGS.App
     public class UserData
     {
         public string userName;
-        public string password;
-        public bool isLogined;
+        public string appKey;
+        public bool isSignIn;
 
         public bool CheckValid()
         {
-            return !(string.IsNullOrEmpty(userName) || string.IsNullOrEmpty(password));
+            return !(string.IsNullOrEmpty(userName) || string.IsNullOrEmpty(appKey));
         }
     }
 }

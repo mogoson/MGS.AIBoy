@@ -63,7 +63,7 @@ namespace MGS.App
         {
             mainUI.SetActive(true);
             mainUI.Refresh(data);
-            qianWenHub.AppKey = data.password;
+            qianWenHub.AppKey = data.appKey;
             dialogCpnt.CreateDialog();
         }
 

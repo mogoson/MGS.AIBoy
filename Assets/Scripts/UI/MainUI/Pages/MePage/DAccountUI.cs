@@ -44,7 +44,7 @@ namespace MGS.App
         protected override void OnRefresh(UserData option)
         {
             iptUser.text = option.userName;
-            iptPassword.text = option.password;
+            iptPassword.text = option.appKey;
         }
     }
 }

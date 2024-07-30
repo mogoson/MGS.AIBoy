@@ -40,7 +40,7 @@ namespace MGS.App
         protected virtual void Awake()
         {
             iptUser.onValueChanged.AddListener(text => { Option.userName = text; CheckInteractable(); });
-            iptPassword.onValueChanged.AddListener(text => { Option.password = text; CheckInteractable(); });
+            iptPassword.onValueChanged.AddListener(text => { Option.appKey = text; CheckInteractable(); });
             btnKeyHelp.onClick.AddListener(() => OnKeyHelpEvent?.Invoke());
 
             togAccept.onValueChanged.AddListener(accept => CheckInteractable());
@@ -59,7 +59,7 @@ namespace MGS.App
         protected override void OnRefresh(UserData data)
         {
             iptUser.text = data.userName;
-            iptPassword.text = data.password;
+            iptPassword.text = data.appKey;
             CheckInteractable();
         }
 

@@ -56,7 +56,7 @@ namespace MGS.App
                 {
                     loginUI.SetActive(false);
                     userData = data;
-                    userData.isLogined = true;
+                    userData.isSignIn = true;
                     UpdateLoginData(userData);
                     onLogined?.Invoke(userData);
                 }
@@ -79,7 +79,7 @@ namespace MGS.App
         {
             loginUI.ToggleLoading(true);
 
-            var qianWenHub = new QianWenHub(data.password);
+            var qianWenHub = new QianWenHub(data.appKey);
             var dialog = qianWenHub.CreateTextDialog();
             dialog.OnComplete += OnComplete;
             dialog.Quest("Test");
@@ -94,7 +94,7 @@ namespace MGS.App
         public void LogIn()
         {
             userData = LoadLoginData(loginFile);
-            if (userData.CheckValid() && userData.isLogined)
+            if (userData.CheckValid() && userData.isSignIn)
             {
                 loginUI.SetActive(false);
                 onLogined?.Invoke(userData);
@@ -114,7 +114,7 @@ namespace MGS.App
 
         public void LogOut()
         {
-            userData.isLogined = false;
+            userData.isSignIn = false;
             UpdateLoginData(userData);
         }
 
