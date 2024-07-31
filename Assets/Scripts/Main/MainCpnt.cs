@@ -69,11 +69,29 @@ namespace MGS.App
 
         void OnLogOut(UserData data)
         {
-            mainUI.SetActive(false);
-            mainUI.mePageUI.SetActive(false);
-            qianWenHub.AppKey = null;
-            dialogCpnt.ClearDialog();
-            OnLogOutEvent?.Invoke(data);
+            var options = new UIDialogOption()
+            {
+                tittle = "Sign out",
+                closeButton = true,
+                content = "Are you sure sign out?",
+                cancelButton = "Cancel",
+                yesButton = "Confirm",
+                callback = OnDialogResult
+            };
+            dialogUI.Refresh(options);
+            dialogUI.SetActive();
+
+            void OnDialogResult(UIDialogResult result)
+            {
+                if (result == UIDialogResult.Yes)
+                {
+                    mainUI.SetActive(false);
+                    mainUI.mePageUI.SetActive(false);
+                    qianWenHub.AppKey = null;
+                    dialogCpnt.ClearDialog();
+                    OnLogOutEvent?.Invoke(data);
+                }
+            }
         }
 
         void OnError(Exception error)
