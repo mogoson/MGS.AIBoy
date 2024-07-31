@@ -1,2 +1,2 @@
-# MGS.AIBoy
-AI chat assistant base on Qian Wen.
+# MGS.ChatBoy
+Chat assistant base on Qian Wen.
