@@ -1544,6 +1544,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1525991913721299866, guid: b2bbcbf6fc1105f47b44e8b66c56b9ff, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2369991858644250300, guid: b2bbcbf6fc1105f47b44e8b66c56b9ff, type: 3}
       propertyPath: m_Name
       value: MainUI

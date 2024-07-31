@@ -31,10 +31,10 @@ namespace MGS.App
 
         private void Awake()
         {
-            btnAccount.onClick.AddListener(() => detailsUI.SetActive(typeof(DAccountUI)));
-            btnSettins.onClick.AddListener(() => detailsUI.SetActive(typeof(DSettingsUI)));
-            btnAgreement.onClick.AddListener(() => detailsUI.SetActive(typeof(DAgreementUI)));
-            btnAbout.onClick.AddListener(() => detailsUI.SetActive(typeof(DAboutUI)));
+            btnAccount.onClick.AddListener(() => detailsUI.SetActive(btnAccount.name));
+            btnSettins.onClick.AddListener(() => detailsUI.SetActive(btnSettins.name));
+            btnAgreement.onClick.AddListener(() => detailsUI.SetActive(btnAgreement.name));
+            btnAbout.onClick.AddListener(() => detailsUI.SetActive(btnAbout.name));
             logOut.onClick.AddListener(() => OnLogOutEvent?.Invoke(Option));
 
             detailsUI.OnAccountDirtyEvent += data => OnAccountDirtyEvent?.Invoke(data);

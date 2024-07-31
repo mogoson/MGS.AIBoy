@@ -26,6 +26,7 @@ namespace MGS.App
         public DAgreementUI agreementUI;
         public DAboutUI aboutUI;
         public Button btnBack;
+        public Text txtTittle;
 
         protected virtual void Awake()
         {
@@ -39,12 +40,13 @@ namespace MGS.App
             accountUI.Refresh(data);
         }
 
-        public void SetActive(Type optType)
+        public void SetActive(string optName)
         {
-            accountUI.SetActive(accountUI.GetType() == optType);
-            settingsUI.SetActive(settingsUI.GetType() == optType);
-            agreementUI.SetActive(agreementUI.GetType() == optType);
-            aboutUI.SetActive(aboutUI.GetType() == optType);
+            txtTittle.text = optName;
+            accountUI.SetActive(accountUI.name == optName);
+            settingsUI.SetActive(settingsUI.name == optName);
+            agreementUI.SetActive(agreementUI.name == optName);
+            aboutUI.SetActive(aboutUI.name == optName);
             SetActive();
         }
 
