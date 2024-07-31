@@ -75,7 +75,7 @@ namespace MGS.App
                 closeButton = true,
                 content = "Are you sure sign out?",
                 cancelButton = "Cancel",
-                yesButton = "Confirm",
+                yesButton = "Yes",
                 callback = OnDialogResult
             };
             dialogUI.Refresh(options);

@@ -4988,7 +4988,6 @@ GameObject:
   - component: {fileID: 7099478918782985224}
   - component: {fileID: 773945544807084748}
   - component: {fileID: 9158539715218123536}
-  - component: {fileID: 5727495333146758906}
   m_Layer: 5
   m_Name: IptPassword
   m_TagString: Untagged
@@ -5124,18 +5123,6 @@ MonoBehaviour:
   m_CaretWidth: 1
   m_ReadOnly: 0
   m_ShouldActivateOnSelect: 1
---- !u!114 &5727495333146758906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6248626999264344281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c21e6777eaceb5f42ae0d31ee6500152, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6279185384293965839
 GameObject:
   m_ObjectHideFlags: 0
@@ -8581,7 +8568,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iptUser: {fileID: 6998224595454728635}
   iptPassword: {fileID: 9158539715218123536}
-  listener: {fileID: 5727495333146758906}
 --- !u!1 &8689572461109865341
 GameObject:
   m_ObjectHideFlags: 0
